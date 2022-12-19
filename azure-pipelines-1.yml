@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: '379926b2-4259-4cec-9667-cc2f22c4a07a'
   imageRepository: 'jaganrajagopalakspythondocker'
   containerRegistry: 'acrwebappsimage.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: '**/DockerFile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'acrwebappsimage12057b93-auth'
 
