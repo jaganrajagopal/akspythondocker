@@ -13,7 +13,7 @@ variables:
   dockerRegistryServiceConnection: '69e6b472-911d-4b36-94da-1e5dba5b9607'
   imageRepository: 'akspythondockerlatest'
   containerRegistry: 'pythonwebapps.azurecr.io'
-  dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
+  dockerfilePath: '$(Build.SourcesDirectory)/DockerFile'
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
