@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: pythonwebapps 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pythonwebapps
+  template:
+    metadata:
+      labels:
+        app: pythonwebapps 
+    spec:
+      containers:
+        - name: pythonwebapps 
+          image: pythonwebapps.azurecr.io/pythonwebapps
+          ports:
+          - containerPort: 80
